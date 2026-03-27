@@ -1,0 +1,131 @@
+.chat-landing-title {
+  margin: 0;
+  font-weight: 500;
+  color: #0f172a;
+  font-size: clamp(1.45rem, 2vw + 1rem, 2rem);
+}
+
+.chat-landing-title.mobile {
+  font-size: 1.25rem;
+}
+
+.chat-body-mobile {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #0f172a;
+}
+
+.chat-mobile-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.chat-mobile-card.muted {
+  background: #ffffff;
+  color: #475569;
+}
+
+.chat-mobile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chat-action-pill {
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: #ffffff;
+  color: #475569;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.chat-action-pill:hover {
+  background: #f8fafc;
+}
+
+.chat-body-desktop {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chat-bubble-row {
+  display: flex;
+}
+
+.chat-bubble-row.end {
+  justify-content: flex-end;
+}
+
+.chat-bubble-row.start {
+  justify-content: flex-start;
+}
+
+.chat-bubble {
+  max-width: min(85%, 760px);
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.chat-bubble.end {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.chat-bubble.start {
+  background: #f8fafc;
+  color: #334155;
+}
+
+.chat-bubble p {
+  margin: 0;
+}
+
+.chat-note {
+  color: #64748b;
+}
+
+.chat-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  color: #475569;
+}
+
+.chat-list li + li {
+  margin-top: 3px;
+}
+
+.chat-quote {
+  margin-top: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  padding: 10px;
+  font-size: 0.86rem;
+  font-style: italic;
+  color: #475569;
+}
+
+@media (max-width: 900px) {
+  .chat-bubble {
+    max-width: 92%;
+  }
+}
